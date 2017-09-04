@@ -66,7 +66,24 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="topologies.Neighborhood" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+              <ol><li name="topologies.Counter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CounterextendsAnyRef"></a>
+      <a id="Counter:Counter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Counter.html"><span class="name">Counter</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#topologies.package@CounterextendsAnyRef" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="topologies.Neighborhood" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="NeighborhoodextendsProductwithSerializable"></a>
       <a id="Neighborhood:Neighborhood"></a>
       <h4 class="signature">
@@ -99,7 +116,41 @@
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Node for use in dhts *</p>
+    </li><li name="topologies.PNCounter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PNCounterextendsCounterwithProductwithSerializable"></a>
+      <a id="PNCounter:PNCounter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PNCounter.html"><span class="name">PNCounter</span></a><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="add">add: <span class="extype" name="scala.Long">Long</span></span>, <span name="delete">delete: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result"> extends <a href="Counter.html" class="extype" name="topologies.Counter">Counter</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#topologies.package@PNCounterextendsCounterwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> Has two monotonic counters, one for adds, the other for deletes*</p>
+    </li><li name="topologies.VectorClock" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VectorClockextendsCounterwithProductwithSerializable"></a>
+      <a id="VectorClock:VectorClock"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="VectorClock.html"><span class="name">VectorClock</span></a><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="c">c: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result"> extends <a href="Counter.html" class="extype" name="topologies.Counter">Counter</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#topologies.package@VectorClockextendsCounterwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> Vector Clocks, are labeled monotonic counters</p>
     </li></ol>
             </div>
 
@@ -124,6 +175,23 @@
       </a>
     </span>
       <p class="shortcomment cmt">Basic Chord Implementation</p>
+    </li><li name="topologies.Counter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Counter"></a>
+      <a id="Counter:Counter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Counter$.html"><span class="name">Counter</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#topologies.package@Counter" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="topologies.Neighborhood" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Neighborhood"></a>
       <a id="Neighborhood:Neighborhood"></a>
@@ -158,6 +226,23 @@
       </a>
     </span>
       
+    </li><li name="topologies.PNCounter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PNCounter"></a>
+      <a id="PNCounter:PNCounter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PNCounter$.html"><span class="name">PNCounter</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#topologies.package@PNCounter" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="topologies.PreferenceList" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="PreferenceList"></a>
       <a id="PreferenceList:PreferenceList"></a>
@@ -175,6 +260,40 @@
       </a>
     </span>
       <p class="shortcomment cmt">  A module to create replica sets, and use consistent hashing to pick the appropriate partitiion</p>
+    </li><li name="topologies.VectorClock" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VectorClock"></a>
+      <a id="VectorClock:VectorClock"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="VectorClock$.html"><span class="name">VectorClock</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#topologies.package@VectorClock" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="topologies.membership" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="membership"></a>
+      <a id="membership:membership"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="membership/package.html"><span class="name">membership</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#topologies.package@membership" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li></ol>
             </div>
 
