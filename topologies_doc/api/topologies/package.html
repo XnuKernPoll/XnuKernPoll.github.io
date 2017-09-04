@@ -1,0 +1,325 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>topologies - topologies</title>
+          <meta name="description" content="topologies - topologies" />
+          <meta name="keywords" content="topologies topologies" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../lib/template.js"></script>
+      <script type="text/javascript" src="../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../index.html';
+            var hash = 'topologies.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../lib/package_big.png" />
+        
+        <h1>topologies</h1><span class="permalink">
+      <a href="../index.html#topologies.package" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">topologies</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="topologies.Counter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CounterextendsAnyRef"></a>
+      <a id="Counter:Counter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Counter.html"><span class="name">Counter</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#topologies.package@CounterextendsAnyRef" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="topologies.Neighborhood" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NeighborhoodextendsProductwithSerializable"></a>
+      <a id="Neighborhood:Neighborhood"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Neighborhood.html"><span class="name">Neighborhood</span></a><span class="params">(<span name="my_node">my_node: <a href="Node.html" class="extype" name="topologies.Node">Node</a></span>, <span name="neighbors">neighbors: <span class="extype" name="scala.List">List</span>[<a href="Node.html" class="extype" name="topologies.Node">Node</a>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#topologies.package@NeighborhoodextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">the state needed for p2p routing</p>
+    </li><li name="topologies.Node" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NodeextendsProductwithSerializable"></a>
+      <a id="Node:Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Node.html"><span class="name">Node</span></a><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="hash">hash: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#topologies.package@NodeextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Node for use in dhts *</p>
+    </li><li name="topologies.PNCounter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PNCounterextendsCounterwithProductwithSerializable"></a>
+      <a id="PNCounter:PNCounter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PNCounter.html"><span class="name">PNCounter</span></a><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="add">add: <span class="extype" name="scala.Long">Long</span></span>, <span name="delete">delete: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result"> extends <a href="Counter.html" class="extype" name="topologies.Counter">Counter</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#topologies.package@PNCounterextendsCounterwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> Has two monotonic counters, one for adds, the other for deletes*</p>
+    </li><li name="topologies.VectorClock" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VectorClockextendsCounterwithProductwithSerializable"></a>
+      <a id="VectorClock:VectorClock"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="VectorClock.html"><span class="name">VectorClock</span></a><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="c">c: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result"> extends <a href="Counter.html" class="extype" name="topologies.Counter">Counter</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#topologies.package@VectorClockextendsCounterwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> Vector Clocks, are labeled monotonic counters</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="topologies.Chord" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Chord"></a>
+      <a id="Chord:Chord"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Chord$.html"><span class="name">Chord</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#topologies.package@Chord" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Basic Chord Implementation</p>
+    </li><li name="topologies.Counter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Counter"></a>
+      <a id="Counter:Counter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Counter$.html"><span class="name">Counter</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#topologies.package@Counter" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="topologies.Neighborhood" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Neighborhood"></a>
+      <a id="Neighborhood:Neighborhood"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Neighborhood$.html"><span class="name">Neighborhood</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#topologies.package@Neighborhood" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="topologies.Node" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Node"></a>
+      <a id="Node:Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Node$.html"><span class="name">Node</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#topologies.package@Node" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="topologies.PNCounter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PNCounter"></a>
+      <a id="PNCounter:PNCounter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PNCounter$.html"><span class="name">PNCounter</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#topologies.package@PNCounter" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="topologies.PreferenceList" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PreferenceList"></a>
+      <a id="PreferenceList:PreferenceList"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PreferenceList$.html"><span class="name">PreferenceList</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#topologies.package@PreferenceList" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">  A module to create replica sets, and use consistent hashing to pick the appropriate partitiion</p>
+    </li><li name="topologies.VectorClock" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VectorClock"></a>
+      <a id="VectorClock:VectorClock"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="VectorClock$.html"><span class="name">VectorClock</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#topologies.package@VectorClock" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="topologies.membership" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="membership"></a>
+      <a id="membership:membership"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="membership/package.html"><span class="name">membership</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#topologies.package@membership" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
